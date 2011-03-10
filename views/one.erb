@@ -1,0 +1,11 @@
+<% if (locals[:c])
+     c = locals[:c] %>
+  <table cols=2>
+    <tr><td>Id:    </td><td><%= c.id        %></td></tr>
+    <tr><td>Last:  </td><td><%= c.lastname  %></td></tr>
+    <tr><td>First: </td><td><%= c.firstname %></td></tr>
+    <tr><td>Email: </td><td><%= c.email     %></td></tr>
+  </table>
+<% else %>
+  <h2>Contact <%= @id %> not present</h2>
+<% end %>

@@ -1,0 +1,18 @@
+<% if (locals[:contacts])
+  contacts = locals[:contacts] %>
+  <table cols=6>
+    <tr><th>Id</th><th>Last</th><th>First</th><th>Email</th><th>View</th><th>Edit</th><th>Del</th></tr>
+  <% contacts.each do |c| %>
+    <tr><td><%= c.id %></td>
+        <td><%= c.lastname %></td>
+        <td><%= c.firstname %></td>
+        <td><%= c.email %></td>
+        <td><a href="<%= url('contact/' + c.id.to_s) %>">view</a></td>
+        <td><a href="<%= url('contact/edit/' + c.id.to_s) %>">edit</a></td>
+        <td><a href="<%= url('contact/del/' + c.id.to_s) %>">del</a></td>
+    </tr>
+  <% end %>
+  </table>
+<% else %>
+  <h2>No Contacts Found!</h2>
+<% end %>

@@ -1,0 +1,7 @@
+<% c = locals[:c] %>
+<h2><%= c.firstname + " " + c.lastname %><h2>
+<h3>Are you sure you want to delete this contact?<h3>
+<form action="/contact/<%= c.id %>" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Delete"> or <a href="/contacts">Cancel</a>
+</form>
