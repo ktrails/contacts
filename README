@@ -1,0 +1,1 @@
+This is a ruby newbie app based on sinatra and datamapper to try out creating, listing, editing and deleting "contacts" from a database: firstname, lastname, email, and an id (key).
