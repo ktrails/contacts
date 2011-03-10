@@ -1,1 +1,8 @@
 This is a ruby newbie app based on sinatra and datamapper to try out creating, listing, editing and deleting "contacts" from a database: firstname, lastname, email, and an id (key).
+
+1. fetch the code
+2. cd contacts
+3. ruby -rubygems contact.rb
+4. In a browser, go to http://127.0.0.1:4567/contacts  (ymmv)
+5. Click the 'Reset' link to populate the database with a few contacts
+6. add new, view or edit existing, or delete contacts until you're bored silly.
